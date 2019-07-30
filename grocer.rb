@@ -70,8 +70,8 @@ def checkout(cart, coupons)
   con_cart_clearance = apply_clearance(con_cart)
   con_cart_coupon = apply_coupons(con_cart_clearance, coupons)
   
-    con_cart_coupon.each do |key, value|
-      value[price]
+    con_cart_coupon.reduce do |key, value|
+      value[price] = key + 
       binding.pry
     end
   total 
