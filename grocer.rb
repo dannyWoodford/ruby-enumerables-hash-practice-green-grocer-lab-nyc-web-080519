@@ -72,9 +72,8 @@ def checkout(cart, coupons)
   
   total = 0 
   
-    con_cart_coupon.each do |value|
-      num = value[1][:price] 
-      total+=num
+    con_cart_coupon.each do |item|
+      total += 
       binding.pry
     end
   total 
