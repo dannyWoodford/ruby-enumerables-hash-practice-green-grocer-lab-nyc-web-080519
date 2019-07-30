@@ -70,7 +70,7 @@ def checkout(cart, coupons)
   con_cart_clearance = apply_clearance(con_cart)
   con_cart_coupon = apply_coupons(con_cart_clearance, coupons)
   #binding.pry
-    con_cart.each do |key, value|
+    con_cart_.each do |key, value|
       value[price]
       
     end
