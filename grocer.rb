@@ -66,10 +66,13 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  con_cart =consolidate_cart(cart) 
+  con_cart =consolidate_cart(cart)
+  binding.pry
+  con_cart_clearance = apply_clearance(con_cart)
+  binding.pry
     con_cart.each do |key, value|
-    
-      binding.pry
+      value[price]
+      
     end
-  
+  total 
 end
