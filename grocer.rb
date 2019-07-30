@@ -72,7 +72,7 @@ def checkout(cart, coupons)
   
     con_cart_coupon.reduce do | value|
       num = value[1][:price] 
-      total += num
+      total = total + num
       binding.pry
     end
   total 
