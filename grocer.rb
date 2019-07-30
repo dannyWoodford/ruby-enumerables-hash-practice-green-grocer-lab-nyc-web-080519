@@ -71,7 +71,7 @@ def checkout(cart, coupons)
   con_cart_coupon = apply_coupons(con_cart_clearance, coupons)
   
     con_cart_coupon.reduce do |key, value|
-      #value[price] = key + 
+      total += value[1][:price]  
       binding.pry
     end
   total 
